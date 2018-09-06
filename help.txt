@@ -1,0 +1,77 @@
+
+Commands available:
+
+bars
+	Description: Lists chocolate bars, according the specified parameters.
+
+	Options:
+		* sellcountry=<name>|sourcecountry=<name>|
+			sellregion=<name>|sourceregion=<geo_name> [default: none]
+		Description: Specifies a country or region within which to limit the
+		results, and also specifies whether to limit by the seller
+		(or manufacturer) or by the bean origin source.
+
+		* ratings|cocoa [default: ratings]
+		Description: Specifies whether to sort by rating or cocoa percentage
+
+		* top=<limit>|bottom=<limit> [default: top=10]
+		Description: Specifies whether to list the top <limit> matches or the
+		bottom <limit> matches.
+
+companies
+	Description: Lists chocolate bars sellers according to the specified parameters.
+	Only companies that sell at least 4 different kinds of bars
+	are listed in results.
+
+	Options:
+		* country=<name>|region=<name> [default: none]
+		Description: Specifies a country or region within which to limit the
+		results.
+
+		* ratings|cocoa|bars_sold [default: ratings]
+		Description: Specifies whether to sort by rating, cocoa percentage, or
+		the number of different types of bars sold
+
+		* top=<limit>|bottom=<limit> [default: top=10]
+		Description: Specifies whether to list the top <limit> matches or the
+		bottom <limit> matches.
+
+countries
+	Description: Lists countries according to specified parameters.
+	Only countries that sell/source at least 4 different kinds of bars
+	are listed in results.
+
+	Options:
+		* region=<name> [default: none]
+		Description: Specifies a region within which to limit the
+		results.
+
+		* sellers|sources [default: sellers]
+		Description: Specifies whether to select countries based sellers or bean
+		sources.
+
+		* ratings|cocoa|bars_sold [default: ratings]
+		Description: Specifies whether to sort by rating, cocoa percentage, or
+		the number of different types of bars sold
+
+		* top=<limit>|bottom=<limit> [default: top=10]
+		Description: Specifies whether to list the top <limit> matches or the
+		bottom <limit> matches.
+
+regions
+	Description: Lists regions according to specified parameters.
+	Only regions that sell/source at least 4 different kinds of bars are
+	listed in results.
+
+	Options:
+		* sellers|sources [default: sellers]
+		Description: Specifies whether to select countries based sellers or bean
+		sources.
+
+		* ratings|cocoa|bars_sold [default: ratings]
+		Description: Specifies whether to sort by rating, cocoa percentage, or
+		the number of different types of bars sold
+
+		* top=<limit>|bottom=<limit> [default: top=10]
+		Description: Specifies whether to list the top <limit> matches or the
+		bottom <limit> matches.
